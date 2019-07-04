@@ -1,0 +1,5 @@
+out/*.pdf
+out/*.docx
+figs/*
+!figs/*.svg
+!figs/*.pdf
