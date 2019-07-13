@@ -9,4 +9,5 @@ mv post-commit ./.git/hooks/post-commit
 mkdir figs
 mkdir out
 mkdir release
+rm README.md-e
 rm init.sh
