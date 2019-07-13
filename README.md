@@ -29,14 +29,14 @@ chmod +x ./init.sh
 ./bin/make_pdf.sh
 ```
 
-### Automatic generation
+## Automatic generation
 
-#### Document generation
+### Document generation
 
 Pushing automatically generates `docx` file in `out` directory.  
 ([Please view pre-push](./pre-push))
 
-#### Log generation
+### Log generation
 
 Committing automatically generates log.  
 ([Please view post-commit](./post-commit))
