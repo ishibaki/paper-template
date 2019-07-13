@@ -3,4 +3,4 @@ out/*.docx
 figs/*
 !figs/*.svg
 !figs/*.pdf
-log/writing_log.csv
+log/*
