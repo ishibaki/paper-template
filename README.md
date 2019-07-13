@@ -20,17 +20,13 @@ chmod +x ./init.sh
 ### Generate `docx` file
 
 ```sh
-cd template
-chmod +x make_docx.sh
-./make_docx.sh
+./bin/make_docx.sh
 ```
 
 ### Generate `pdf` file
 
 ```sh
-cd template
-chmod +x make_pdf.sh
-./make_pdf.sh
+./bin/make_pdf.sh
 ```
 
 ### Automatic document generation
