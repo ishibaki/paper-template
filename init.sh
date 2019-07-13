@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NOW_DATE=`date "+%F"`
-sed -i -e "s/YYYY-MM-DD/${NOW_DATE}/" ./README.md >| ./README.md
+sed -i -e "s/YYYY-MM-DD/${NOW_DATE}/" ./README.md
 git init
 mv pre-push ./.git/hooks/pre-push
 mv post-commit ./.git/hooks/post-commit
