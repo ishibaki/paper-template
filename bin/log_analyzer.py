@@ -41,5 +41,5 @@ ax = sns.barplot(data=word_count, x='Writing amount', y=word_count.index,
 # Y-axis Settings
 # ax.set_xlabel('words')
 
-plt.savefig('log.pdf', format='pdf', bbox_inches='tight')
+plt.savefig('./log/log.pdf', format='pdf', bbox_inches='tight')
 # plt.show()
