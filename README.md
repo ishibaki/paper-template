@@ -41,7 +41,7 @@ Pushing automatically generates `docx` file.
 Committing automatically generates log.  
 ([Please view post-commit](./post-commit))
 
-- Update `[writing_log.csv](./log/writing_log.csv)` file
+- Update [`writing_log.csv`](./log/writing_log.csv) file
 - Generate `log.pdf` in `./log/` directory
 
 <!-- vim: set foldmethod=marker : -->
