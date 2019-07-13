@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
 
-df_log = pd.read_csv('./writing_log.csv')
+df_log = pd.read_csv('./log/writing_log.csv')
 
 log_2 = np.array(df_log.iloc[1:, :].loc[:, ['word', 'letter']])
 log_1 = np.array(df_log.iloc[:-1, :].loc[:, ['word', 'letter']])
