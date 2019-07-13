@@ -3,7 +3,7 @@
 git init
 mv pre-push ./.git/hooks/pre-push
 mv post-commit ./.git/hooks/post-commit
-./logger.sh
+.bin/logger.sh
 mkdir figs
 mkdir out
 mkdir release
