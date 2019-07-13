@@ -10,6 +10,13 @@ Starting to write: YYYY-MM-DD
 
 ## How to use
 
+### Start from this command
+
+```sh
+chmod +x ./init.sh
+./init.sh
+```
+
 ### Generate `docx` file
 
 ```sh
