@@ -33,7 +33,7 @@ chmod +x ./init.sh
 
 #### Document generation
 
-Pushing automatically generates `docx` file.  
+Pushing automatically generates `docx` file in `out` directory.  
 ([Please view pre-push](./pre-push))
 
 #### Log generation
@@ -42,6 +42,6 @@ Committing automatically generates log.
 ([Please view post-commit](./post-commit))
 
 - Update [`writing_log.csv`](./log/writing_log.csv) file
-- Generate `log.pdf` in `./log/` directory
+- Generate `log.pdf` in `log` directory
 
 <!-- vim: set foldmethod=marker : -->
