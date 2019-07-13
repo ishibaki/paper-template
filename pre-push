@@ -1,4 +1,4 @@
 #!/bin/bash
 
 ./bin/make_docx.sh
-./bin/make_pdf.sh
+# ./bin/make_pdf.sh
