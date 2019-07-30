@@ -1,6 +1,6 @@
 # References
 
-<div id="refs"></id>
+<div id="refs"></div>
 
 <!--
 0_metadata/meta0.md
