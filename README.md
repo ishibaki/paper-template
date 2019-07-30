@@ -13,8 +13,7 @@ Starting to write: YYYY-MM-DD
 ### Start from this command
 
 ```sh
-chmod +x ./init.sh
-./init.sh
+chmod +x ./init.sh && ./init.sh
 ```
 
 ### Generate `docx` file
