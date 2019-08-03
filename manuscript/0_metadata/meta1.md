@@ -17,6 +17,9 @@ footer-center: \thepage
 header-includes:
 - \usepackage{seqsplit}
 - \hypersetup{colorlinks = false}
+chapters: True
+chaptersDepth: 1
+chapDelim: ""
 titleDelim: ""
 figureTitle: "Figure"
 tableTitle: "Table"
