@@ -22,8 +22,11 @@ chaptersDepth: 1
 chapDelim: ""
 titleDelim: ""
 figureTitle: "Figure"
+figureTemplate: '**$$figureTitle$$ $$i$$**$$titleDelim$$ $$t$$'
 tableTitle: "Table"
+tableTemplate: '**$$tableTitle$$ $$i$$**$$titleDelim$$ $$t$$'
 listingTitle: "Code"
+listingTemplate: '**$$listingTitle$$ $$i$$**$$titleDelim$$ $$t$$'
 figPrefix:
 - "Fig."
 - "Figs."
