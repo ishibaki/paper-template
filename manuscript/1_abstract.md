@@ -16,4 +16,5 @@
 5_discussion.md
 6_figs.md
 7_references.md
+8_supplements.md
 -->
