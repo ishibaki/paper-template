@@ -7,6 +7,9 @@ chmod +x ./bin/make_docx.sh
 chmod +x ./bin/make_pdf.sh
 chmod +x ./bin/log_analyzer.py
 
+echo "Enter the title:"
+read title
+sed -i -e "s/^\# Papaer Template/# ${title}/" ./README.md
 NOW_DATE=`date "+%F"`
 sed -i -e "s/YYYY-MM-DD/${NOW_DATE}/" ./README.md
 git init
