@@ -1,6 +1,6 @@
 out/*.pdf
 out/*.docx
+out/*.html
 figs/*
 !figs/*.svg
-!figs/*.pdf
 log/*
