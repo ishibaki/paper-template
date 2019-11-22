@@ -1,20 +1,16 @@
 # Names of files.
 files = \
-		./0_metadata/meta0.md\
-		./0_metadata/meta1.md\
+		./0_metadata/*.md\
 		./*.md\
 
 # Directory of files
 changed_files = manuscript/*
 
-# Directory name
-directory_name = manuscript
+# Directory name of manuscript files
+manuscript_dir = manuscript
 
-# Os specific open command,
-# If MacOS, 'open',
-# If Linux, 'xdg-open',
-# If Windows, just a blank
-open_command = open
+# Directory name of output files
+out_dir = out
 
 # Filetype of default output
 default_type = docx
@@ -23,7 +19,7 @@ default_type = docx
 output_file = out
 
 # Reader arguments for pandoc
-reader =
+reader = -f markdown\
 
 # general arguments
 writer = --bibliography ~/.pandoc/library.bib\
@@ -31,7 +27,6 @@ writer = --bibliography ~/.pandoc/library.bib\
 		 -V papersize=a4\
 		 --filter pandoc-crossref\
 		 -N\
-		 -f markdown\
 
 # docx specific arguments
 docx = -t docx\
@@ -53,25 +48,35 @@ html = -t html5\
 
 all: $(changed_files)
 	$(eval today := $(shell date "+%y%m%d"))
-	cd $(directory_name);\
-	pandoc -o ../out/$(today)_$(output_file).$(default_type) $(reader) $(writer) $(docx) $(files);\
+	cd ./$(manuscript_dir);\
+	pandoc -o ../$(out_dir)/$(today)_$(output_file).$(default_type) $(reader) $(writer) $(docx) $(files);\
 	cd ..
 
 %.pdf: $(changed_files)
-	cd $(directory_name);\
-	pandoc -o ../out/$@ $(reader) $(writer) $(pdf) $(files);\
+	cd ./$(manuscript_dir);\
+	pandoc -o ../$(out_dir)/$@ $(reader) $(writer) $(pdf) $(files);\
 	cd ..
 
 %.html: $(changed_files)
-	cd $(directory_name);\
-	pandoc -o ../out/$@ $(reader) $(writer) $(html) $(files);\
+	cd ./$(manuscript_dir);\
+	pandoc -o ../$(out_dir)/$@ $(reader) $(writer) $(html) $(files);\
 	cd ..
 
 %.docx: $(changed_files)
-	cd $(directory_name);\
-	pandoc -o ../out/$@ $(reader) $(writer) $(docx) $(files);\
+	cd ./$(manuscript_dir);\
+	pandoc -o ../$(out_dir)/$@ $(reader) $(writer) $(docx) $(files);\
 	cd ..
 
+ifeq ($(shell uname),Linux)
 open:
 	$(eval today := $(shell date "$%y%m%d"))
-	$(open_command) ./out/$(today)_$(output_file).$(default_type)
+	xdg-open ./$(out_dir)/$(today)_$(output_file).$(default_type)
+else ifeq ($(shell uname),Darwin)
+open:
+	$(eval today := $(shell date "$%y%m%d"))
+	open ./$(out_dir)/$(today)_$(output_file).$(default_type)
+else
+open:
+	$(eval today := $(shell date "$%y%m%d"))
+	./$(out_dir)/$(today)_$(output_file).$(default_type)
+endif
