@@ -4,3 +4,4 @@ out/*.html
 figs/*
 !figs/*.svg
 log/*
+.Rhistory
