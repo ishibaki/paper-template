@@ -1,4 +1,0 @@
-#!/bin/bash
-
-./bin/logger.sh
-# ./bin/log_analyzer.py
