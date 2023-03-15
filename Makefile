@@ -23,7 +23,7 @@ reader = -f markdown\
 
 # general arguments
 writer = -C\
-		--bibliography ~/.pandoc/library.bib\
+		 --bibliography ~/.pandoc/library.bib\
 		 --csl ~/.pandoc/apa-2.csl\
 		 -V papersize=a4\
 		 -N\
