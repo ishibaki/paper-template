@@ -24,12 +24,13 @@ output_file = out
 reader = -f markdown\
 
 # general arguments
-writer = -C \
-		 --bibliography ~/.pandoc/library.bib\
+writer =  --bibliography ~/.pandoc/library.bib\
 		 --csl ~/.pandoc/apa-2.csl\
 		 -V papersize=a4\
-		 # -N\
+		 -F pandoc-crossref\
+		 -C\
 		 # --filter pandoc-crossref\
+		 # -N\
 
 # docx specific arguments
 docx = -t docx\
