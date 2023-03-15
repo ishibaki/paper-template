@@ -1,4 +1,4 @@
-# Papaer Template
+# Papar Template
 
 Starting to write: YYYY-MM-DD
 
@@ -30,20 +30,5 @@ chmod +x ./init.sh && ./init.sh
 ./bin/make_pdf.sh
 ```
 -->
-
-## Automatic generation
-
-### Document generation
-
-Pushing automatically generates `docx` file in `out` directory.  
-([Please view pre-push](./pre-push))
-
-### Log generation
-
-Committing automatically generates log.  
-([Please view post-commit](./post-commit))
-
-- Update [`writing_log.csv`](./log/writing_log.csv) file
-- Generate `log.pdf` in `log` directory
 
 <!-- vim: set foldmethod=marker : -->
