@@ -5,3 +5,39 @@ figs/*
 !figs/*.svg
 log/*
 .Rhistory
+
+# ignore Mac-relating files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ignore Windows-relating files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# ignore vim-relating files
+*~
+*.swp
+._*
+.netrwhist
+[._]*.un~
+
+# ignore Jupyter notebook checkpoint files
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
